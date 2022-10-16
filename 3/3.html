@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- prints title in  h1 tag -->
+    <h1 id="txt"></h1>
+
+    <script>
+      var x = "Sidra";
+      console.log(x.toLowerCase());
+      console.log(x.toUpperCase());
+
+      function f1(y) {
+        var titlecase = y.split(" ").map((m) => {
+          return m[0].toUpperCase() + m.slice(1);
+        });
+        return titlecase.join(" ");
+      }
+
+      // console.log(f1("Hello i am sidra and i am learning how to code!"));
+
+      document.getElementById("txt").innerHTML = f1(
+        "Hello i am sidra and i am learning how to code!"
+      );
+    </script>
+  </body>
+</html>

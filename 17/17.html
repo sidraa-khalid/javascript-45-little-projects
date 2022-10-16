@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewshiftt" content="width=device-width, initial-scale=1.guests">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var guests = ["Tehreem ", "Maleeha ", "Fatima "];
+            var msg =
+              "Inviting you over a dinner party get together to mark the happy reunion of all the old friends. Come and refresh all your memories!";
+      
+            guests.map((g) => {
+              console.log(g + msg);
+            });
+            console.log(guests);
+            console.log("Maleeha can't come");
+            console.log("Now Annie will come instead of Maleeha");
+            // replace one element at index 1 starting from left and remove one element from index 1 starting from right
+            guests.splice(1, 1, "Annie ");
+            
+            guests.map((g) => {
+              console.log(g + msg);
+            });
+            console.log(guests);
+         
+            console.log("Now we have a bigg dinner table");
+            guests.unshift("Aillah ");
+      guests.splice(2,0,"Sidra ");
+        guests.push("Maryem ");
+            
+             guests.map((m)=>{ console.log(m + msg)})
+             console.log(guests);
+             console.log(" Now i  can invite only two people for dinner");
+
+var msg2="sorry you can’t come to dinner."
+
+           console.log(guests[0] + msg2);  
+            guests.shift();
+             
+           console.log(guests[0] + msg2);  
+           guests.shift();
+           console.log(guests[0] + msg2);  
+            guests.shift();
+           console.log(guests[0] + msg2);  
+            guests.shift();
+            console.log(" Now  only two people are invited for dinner");
+
+console.log(guests);
+           guests.map((m)=>{
+            console.log(m + msg);
+           })
+          
+           console.log(guests[0] + msg2);  
+            guests.shift();
+             
+           console.log(guests[0] + msg2);  
+           guests.shift();
+           console.log(guests);
+      
+          </script>
+</body>
+</html>
